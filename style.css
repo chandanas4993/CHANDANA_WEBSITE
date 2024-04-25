@@ -1,0 +1,504 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:#151414;
+    color: #fff;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    /*background: url(images/Chandana_protfolio.jpeg) 5% bottom/ 30% no-repeat;  Adjusted background size */
+    
+}
+
+
+.container{
+    padding: 10px 8%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 20px 8%; /* Adjusted padding */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px; /* Adjusted margin */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #E0115F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#header{
+    margin-top: 3%;
+    margin-left: auto;  
+    font-size: 30px;
+    text-align: center;
+
+}
+#header h1{
+    margin-top: 50px;
+    font-size: 55px;
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+    
+}
+#header span{
+    color:#E0115F;
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+
+}
+#header p{
+
+    
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+    padding-bottom: 10px;
+
+}
+#header button {
+    background-color: #E30B5C;
+    color: white;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.header-text button:hover {
+    background-color: #9c043c; 
+}
+
+@media screen and (max-width: 768px) {
+    
+   
+    nav {
+        display: none;
+    }
+    #header{
+        margin-top: 50%;
+    }
+
+    #header h1 {
+      
+        font-size: 30px; 
+    }
+    
+
+    #header p {
+        font-size: 15px; /* Adjust the font size of the paragraph */
+    }
+
+    #header button {
+        padding: 5px 10px; /* Adjust the padding of the button */
+        font-size: 20px; /* Adjust the font size of the button */
+    }
+   
+}
+
+
+
+<!-------------ABOUT-------->
+
+#about{
+    padding: 0px 0px;
+    color: #E30B5C;
+    
+   
+
+}
+#about h1{
+  
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+    font-size: 50px;
+    text-decoration: underline #E30B5C;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.about1{
+    flex-basis: 35%;
+}
+
+.about1 img{
+    width:100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.about2{
+    flex-basis: 55%;
+}
+.about2 p{
+    font-size: 20px;
+}
+
+.tab-titles {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px 0 0px;
+ 
+    
+    
+}
+
+.tab-links {
+    cursor: pointer;
+    margin-right: 29px;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+   
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+    
+    
+}
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #E0115F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+
+.tab-links:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.tab-content{
+    display: none;
+
+}
+.tab-content.active{
+    display: block;
+
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-content ul li span {
+    color: #E30B5C;
+    font-size: 14px;
+    font: bold;
+    
+}
+@media (max-width: 768px) {
+    .container{
+        text-align: center;
+        
+    }
+    #about {
+        margin-top: 0;
+
+    }
+    .row {
+        flex-direction: column;
+    }
+    #about h1 {
+        font-size: 30px;
+       
+    } 
+
+    .about1,
+    .about2 {
+        flex-basis: 100%;
+    }
+    .about1 img {
+       
+        max-width: 70%;
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+
+    .tab-titles{
+        
+        flex-direction: column; 
+        align-items: center; /* Center items horizontally */
+        margin-top: 20px;
+        
+    }
+    .tab-links {
+        margin-right: 0; /* Reset margin */
+        margin-bottom: 10px; /* Add some bottom margin */
+    }
+}
+
+
+
+<!-------------CURRENT PROJECTS-------->
+#projects {
+    padding: 0px 20px; 
+    text-align: center;
+  }
+  
+  #projects h1 {
+    text-align: center;
+    padding: 20px 20px;
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+    font-size: 50px;
+    text-decoration: underline #E30B5C;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .project,
+  .description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .description p {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .description a {
+    color: white; /* Default color for links */
+    font-size: 25px;
+  }
+  
+  .description a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .description a.active {
+    text-decoration: underline; /* Underline for active link */
+  }
+  
+  .description span {
+    font-size: 25px; 
+  }
+  
+  .description.d2 {
+    text-align: right;
+  }
+  
+  .project img {
+    max-width: 100%;
+    padding: 20px;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .description h2 {
+    color: #E30B5C;
+    font-size: 36px;
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+  }
+  
+  .project,
+  .description {
+    flex-basis: 45%;
+  }
+  @media (max-width: 768px) {
+    #projects h1 {
+        font-size: 25px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .project,
+    .description {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .description.d2 {
+        text-align: center;
+    }
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .row .project {
+        order: 2;
+    }
+
+    .row .description {
+        order: 1;
+    }
+
+}
+
+  
+
+  <!--------------CONTACT FORM--------------->
+  #contact {
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  #contact h1 {
+    font-family: 'Lucida Handwriting', 'cursive', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline #E30B5C; /* This line seems incorrect, you might want to remove it */
+  }
+  
+  .container {
+    display: flex; /* Make the container a flexbox */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+    justify-content: space-between; /* Align items horizontally with space in between */
+  }
+  
+  .contact {
+    display: flex; /* Make the contact section a flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    width: 100%; /* Allow contact-form and contact-info to fill the available space */
+  }
+  
+  .contact-form,
+.contact-info {
+    flex-basis: calc(50% - 10px); 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    margin-right: 0px; 
+}
+.contact-form  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:#E30B5C;
+    color: #fff;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form  button:hover {
+    background-color: #E30B5C;
+}
+
+.contact-info {
+    margin-left: 20px; 
+}
+
+.contact-form h2,
+.contact-info h2 {
+    text-align: center;
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+  
+    height: 150px; 
+}
+
+.contact-info p{
+    font-size: 30px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    fill: white;
+}
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Arrange items in a column on small screens */
+    }
+    #contact h1 {
+        font-size: 30px;
+       
+      }
+
+    .contact-form,
+    .contact-info {
+        flex-basis: 100%; 
+        margin-left: 0; /* Reset margin-left for contact-info */
+        margin-right: 0; /* Reset margin-right for contact-form */
+    }
+
+    .contact-info {
+        margin-top: 20px; /* Add some top margin between the two sections */
+    }
+    .contact-info p{
+        font-size: 20px;
+    }
+    
+}
