@@ -1,6 +1,6 @@
 *{
     margin:0;
-    padding:0;
+    padding:5px;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -18,7 +18,8 @@ body{
 
 
 .container{
-    padding: 10px 8%;
+    max-width:100vh 100vw;
+    padding:;
 }
 nav {
     display: flex;
@@ -262,6 +263,9 @@ nav ul li a:hover::after {
         border-radius: 15px;
         margin: 0 auto;
     }
+    .about2 p{
+        font-size: 15px;
+    }
 
     .tab-titles{
         
@@ -394,19 +398,19 @@ nav ul li a:hover::after {
     font-family: 'Lucida Handwriting', 'cursive', sans-serif;
     font-size: 50px;
     text-align: center;
-    text-decoration: underline #E30B5C; /* This line seems incorrect, you might want to remove it */
+    text-decoration: underline #E30B5C; 
   }
   
   .container {
-    display: flex; /* Make the container a flexbox */
-    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
-    justify-content: space-between; /* Align items horizontally with space in between */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
   }
   
   .contact {
-    display: flex; /* Make the contact section a flexbox */
-    flex-direction: row; /* Arrange items in a row */
-    width: 100%; /* Allow contact-form and contact-info to fill the available space */
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
   }
   
   .contact-form,
@@ -480,8 +484,9 @@ textarea {
 }
 @media (max-width: 768px) {
     .contact {
-        flex-direction: column; /* Arrange items in a column on small screens */
-    }
+        display: flex;
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center;     }
     #contact h1 {
         font-size: 30px;
        
@@ -489,9 +494,8 @@ textarea {
 
     .contact-form,
     .contact-info {
-        flex-basis: 100%; 
-        margin-left: 0; /* Reset margin-left for contact-info */
-        margin-right: 0; /* Reset margin-right for contact-form */
+        width: 100%; /* Take up full width */
+         margin-bottom: 20px;  
     }
 
     .contact-info {
