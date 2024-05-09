@@ -12,7 +12,6 @@ body{
 #header {
     width: 100%;
     height: 100vh;
-    /*background: url(images/Chandana_protfolio.jpeg) 5% bottom/ 30% no-repeat;  Adjusted background size */
     
 }
 
@@ -24,8 +23,8 @@ body{
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align items to the right */
-    padding: 20px 8%; /* Adjusted padding */
+    justify-content: flex-end; 
+    padding: 20px 8%; 
 }
 
 nav ul {
@@ -35,7 +34,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 0 20px; /* Adjusted margin */
+    margin: 0 20px; 
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -121,12 +120,12 @@ nav ul li a:hover::after {
     
 
     #header p {
-        font-size: 15px; /* Adjust the font size of the paragraph */
+        font-size: 15px; 
     }
 
     #header button {
-        padding: 5px 10px; /* Adjust the padding of the button */
-        font-size: 20px; /* Adjust the font size of the button */
+        padding: 5px 10px; 
+        font-size: 20px; 
     }
    
 }
@@ -270,13 +269,13 @@ nav ul li a:hover::after {
     .tab-titles{
         
         flex-direction: column; 
-        align-items: center; /* Center items horizontally */
+        align-items: center; 
         margin-top: 20px;
         
     }
     .tab-links {
-        margin-right: 0; /* Reset margin */
-        margin-bottom: 10px; /* Add some bottom margin */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 }
 
@@ -313,20 +312,20 @@ nav ul li a:hover::after {
   }
   
   .description p {
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px; 
   }
   
   .description a {
-    color: white; /* Default color for links */
+    color: white; 
     font-size: 25px;
   }
   
   .description a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
   }
   
   .description a.active {
-    text-decoration: underline; /* Underline for active link */
+    text-decoration: underline; 
   }
   
   .description span {
@@ -391,8 +390,7 @@ nav ul li a:hover::after {
 
   <!--------------CONTACT FORM--------------->
   #contact {
-    padding: 20px; /* Adjust the padding as needed */
-  }
+    padding: 20px; }
   
   #contact h1 {
     font-family: 'Lucida Handwriting', 'cursive', sans-serif;
@@ -429,7 +427,7 @@ nav ul li a:hover::after {
     padding: 10px;
     background-color:#E30B5C;
     color: #fff;
-    border: none; /* Remove the border */
+    border: none; 
     border-radius: 5px;
     cursor: pointer;
 }
@@ -467,7 +465,7 @@ input[type="email"] {
 textarea {
     width: 100%;
     padding: 8px;
-    border: none; /* Remove the border */
+    border: none; 
     border-radius: 5px;
   
     height: 150px; 
@@ -485,7 +483,7 @@ textarea {
 @media (max-width: 768px) {
     .contact {
         display: flex;
-        flex-direction: column; /* Change to column layout for smaller screens */
+        flex-direction: column; 
         align-items: center;     }
     #contact h1 {
         font-size: 30px;
@@ -494,12 +492,12 @@ textarea {
 
     .contact-form,
     .contact-info {
-        width: 100%; /* Take up full width */
+        width: 90%; 
          margin-bottom: 20px;  
     }
 
     .contact-info {
-        margin-top: 20px; /* Add some top margin between the two sections */
+        margin-top: 20px; 
     }
     .contact-info p{
         font-size: 20px;
